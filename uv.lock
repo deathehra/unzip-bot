@@ -650,16 +650,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/44/66/2c17bae31c906613795711fc78045c285048168919ace2220daa372c7d72/pyaes-1.6.1.tar.gz", hash = "sha256:02c1b1405c38d3c370b085fb952dd8bea3fadcee6411ad99f312cc129c536d8f", size = 28536, upload-time = "2017-09-20T21:17:54.23Z" }
 
 [[package]]
-name = "pykeyboard"
-version = "0.1.5"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "pyrogram" },
-    { name = "tgcrypto" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/7d/7e/c49621c33ccbd5d04a6a12be2082b8f9941cf89b97f81e1aa42713a87829/pykeyboard-0.1.5.tar.gz", hash = "sha256:b77be4341129ae73e363d46fe1f3243132fc04932f4ad2f7f8234d0971de4de4", size = 7466, upload-time = "2022-02-01T12:20:20.589Z" }
-
-[[package]]
 name = "pymediainfo-pyrofork"
 version = "6.0.2"
 source = { registry = "https://pypi.org/simple" }
