@@ -4,19 +4,19 @@ import psutil
 
 
 class Config:
-    APP_ID = int(os.environ.get("29385418"))
-    API_HASH = os.environ.get("5737577bcb32ea1aac1ac394b96c4b10")
+    APP_ID = int(os.environ.get("APP_ID"))
+    API_HASH = os.environ.get("API_HASH")
     BASE_LANGUAGE = os.environ.get("BASE_LANGUAGE", default="en")
     BOT_TOKEN = os.environ.get("BOT_TOKEN")
     BOT_THUMB = f"{os.path.dirname(__file__)}/bot_thumb.jpg"
-    BOT_OWNER = int(os.environ.get("6893463477"))
+    BOT_OWNER = int(os.environ.get("BOT_OWNER"))
     # Default chunk size (0.005 MB → 1024*6) Increase if you need faster downloads
     CHUNK_SIZE = 1024 * 1024 * 10  # 10 MB
     DOWNLOAD_LOCATION = f"{os.path.dirname(__file__)}/Downloaded"
     IS_HEROKU = os.environ.get("DYNO", default="").startswith("worker.")
     LOCKFILE = "/tmp/unzipbot.lock"
     LOGS_CHANNEL = (
-        int(os.environ.get("-1002302509464"))
+        int(os.environ.get("LOGS_CHANNEL"))
         if os.environ.get("LOGS_CHANNEL").strip("-").isdigit()
         else os.environ.get("LOGS_CHANNEL")
     )
