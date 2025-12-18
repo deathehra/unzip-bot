@@ -30,7 +30,7 @@ readme = "README.md"
 license = {file = "LICENSE"}
 
 [project.scripts]
-format = "ruff format"
+format = "ruff.__main__:main"
 install = "uv sync"
 install-pip = "pip install -U -r requirements.txt"
 lint = "ruff check"
